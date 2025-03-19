@@ -1,0 +1,451 @@
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            JOM'S CGS
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ce5949dce1.js" crossorigin="anonymous"></script>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="js/swiper-bundle.min.css">
+    </head>
+
+    <body style="background-color: #FAA226;">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light 
+            bg-light" id="header" style = "transition: 0.3s ease; color: #FFFCF8;">
+                <div class="container">
+                    <a 
+                    href="Homepage.html"
+                    class="navbar-brand mb-0 h1">
+                    <img 
+                    class="d-inline-block align-top"
+                    src = "images/CGS LOGO COLOR.png" width="80px" alt="JOM'S CGS LOGO">
+                    </a>
+        
+                    <button
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        class="navbar-toggler"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+
+                    <div style="margin-left: auto; margin-right: 15%;">
+                        <div class ="collapse navbar-collapse"
+                        id="navbarNav">
+                            <ul class ="navbar-nav" >
+                                <li class ="nav-item active" style="margin: 5%;">
+                                    <a href = "http://127.0.0.1:3000/Homepage.html" class="nav-link" >
+                                        <h5 class="text-sm-center color: #918D8D ">Home</h5>
+                                    </a>
+                                </li>
+                                <li class ="nav-item active" style="margin: 5%;">
+                                    <a href = "http://127.0.0.1:3000/About.html" class="nav-link" >
+                                        <h5 class="text-sm-center color: #918D8D ">About</h5>
+                                    </a>
+                                </li>
+                                <li class ="nav-item active" style="margin-top: 5%; 
+                                    margin-bottom: 5%;
+                                    margin-right: 5%;
+                                    margin-left: 5%;
+                                    ">
+                                    <button id ="BuyNow" type="button" class="btn btn-primary"
+                                    onclick="location.href='http://127.0.0.1:3000/Products.html'"
+                                    >
+
+                                    <a href="http://127.0.0.1:3000/Products.html"></a>
+                                    <h5 style="margin-top: 5%;">Buy Now</h5>
+                                    </button>
+                                </li>   
+
+                                <li class ="nav-item active" style="margin-top: 6.5%; margin-left: 6%;">
+                                    <img id="cart"
+                                    src = "images\Shopping Cart.png" width="30px" height="30px">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            
+            </nav>
+                <script type="text/javascript">
+                    var lastScrollTop = 0;
+                    var header = document.getElementById('header'); // Fix: Change 'navbar' to 'header'
+                    window.addEventListener("scroll", function () {
+                        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        if (scrollTop > lastScrollTop) {
+                            header.style.top = "-120px";
+                        } else {
+                            header.style.top = "0";
+                        }
+                        lastScrollTop = scrollTop;
+                    });
+                </script>
+        </header>
+        <section style="background-color: #FAA226; padding-top: 20px;">
+            <div class="container-lg pt-5 bg-transparent">
+                <h1 id="hero" style="font-size: 5rem;"> Our Products </h1>
+                <div class="row" style="width: 40%;"> 
+                </div>        
+                <div style="border: solid 1px #FFFCF8;"></div>
+     
+            </div>
+
+            <div class="container-lg pt-5 bg-transparent" style="padding-bottom: 10%;">
+                <div class="row">
+                    <div class="col shop-item">
+                        <div id="prod" class="card" style="width: 18rem;">
+                            <a href="http://127.0.0.1:3000/ProductH.html" style="text-decoration:none; color: black;">
+                            <img class="card-img-top" src="images/110ml model.png" alt="Card image cap" style="padding: 10%;">
+                            </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">110 ML</h5>
+                                    Price: <span class="price">80</span>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <button id="addToCart" class="btn btn-primary">Add to Cart</button>
+                                  </div>
+                          </div>
+                    </div>      
+                    <div class="col shop-item">
+                        <div id="prod" class="card" style="width: 18rem;">
+                        <a href="http://127.0.0.1:3000/Product200.html" style="text-decoration:none; color: black;">
+                            <img class="card-img-top" src="images/200ml model.png" alt="Card image cap" style="padding: 10%;">
+                        </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">200 ML</h5>
+                                    Price: <span class="price">150</span>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <button id="addToCart" class="btn btn-primary">Add to Cart</button>
+                                </div>   
+                          </div>
+                    </div>
+                    <div class="col shop-item">
+                        <div id="prod" class="card" style="width: 18rem;">
+                        <a href="http://127.0.0.1:3000/ProductWholesale.html" style="text-decoration:none; color: black;">
+                            <img class="card-img-top" src="images/wholesale.png" alt="Card image cap" style="padding: 10%;">
+                        </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">24 110 ML JARS</h5>
+                                    Price: <span class="price">1650</span> <span class="highlight"> WHOLESALE!</span>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <button id="addToCart" class="btn btn-primary">Add to Cart</button>
+                                  </div>
+                          </div>
+                    </div>
+                    <div class="col shop-item">
+                        <div id="prod" class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/Question_mark_(black).svg.png" alt="Card image cap" style="padding: 10%;">
+                            <div class="card-body">
+                              <h5 class="card-title">110 ML</h5>
+                              Price: <span class="price">???</span>
+                              <p class="card-text">Coming Soon!</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class = "cart">                        
+                    <i id="close-cart" class="fa-solid fa-x"></i>
+                    <div class="container bcontent">
+                        <h2>Your Cart</h2>
+                        <div class="cart-items">
+                        </div>
+                        <h4>_____________________________</h4>
+                        <h4>Total Price:</h4>
+                        <span class ="total-price">₱0</span>
+                        <div class="col"><button id="popup-link" class="btn btn-primary" style="width: 100%;"  onclick="console.log(itemsExists())">Order Now!</button>
+                        </div>
+                    </div>       
+                    <!-- <div id="price-count" class="container bcontent">
+                        <div class="row">
+                            <div class="col mx-5 my-2">
+                            </div>
+                            <div class="col mx-5 my-2">
+                                <div class="d-flex justify-content-end">
+                                </div>                
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                </div>
+
+                <!-- POP UP WINDOW -->
+                <div id = "popup-window">
+                    <form class="orderForm was-validated" onsubmit="sendEmail(event)">
+                        <div style="display: block; margin-left: auto; margin-right: auto;">
+                            <img src="images/CGS LOGO COLOR.png" width="50px">
+                        </div>
+                        <h2 style="text-align: center;">Order Form</h2>
+                        <div class="form-group mx-3" style="border-color: #FAA226;">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Name">Name:</label>
+                                    <input class="form-control" id="Name" aria-describedby="emailHelp" required>
+                                </div>
+                            
+                                <div class="col">
+                                    <label for="LastName">Last Name:</label>
+                                    <input class="form-control" id="LastName" aria-describedby="emailHelp" required>
+                                </div>                                
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Email">Email:</label>
+                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+                                </div>
+                            
+                                <div class="col">
+                                    <label for="Number">Phone Number:</label>
+                                    <input class="form-control" id="Number" aria-describedby="emailHelp" required>
+                                </div>                                
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Address">Street Address:</label>
+                                    <input class="form-control is-invalid" id="Address" aria-describedby="emailHelp" required>
+                                </div>                             
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <label for="City">City:</label>
+                                    <input class="form-control" id="City" aria-describedby="emailHelp" required>
+                                </div>
+                            
+                                <div class="col">
+                                    <label for="ZIP">ZIP:</label>
+                                    <input class="form-control" id="ZIP" aria-describedby="emailHelp" required>
+                                </div> 
+                            
+                                <div class="col">
+                                    <label for="Province">Province:</label>
+                                    <input class="form-control" id="Province" aria-describedby="emailHelp" required>
+                                </div>                                  
+                            </div>
+                            
+                            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%; border: 0; background-color: #FAA226; color:#FFFCF8">Submit</button>
+                                <button type="button" style="font-size: x-small; background-color: transparent; color: rgb(55, 55, 55); border: 0; margin-top: 30px;" id="close-button"><u>back to product page</u></button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+        </section>
+        <footer style="background-color: black; margin-top: 10px;">
+
+            <div class="container" style="display: flex; flex-direction: row;">
+            <!-- Container -->
+            <div style="display: flex; flex-direction:column; margin-top: 10%; margin-bottom: 10%; padding-top: 10px;" >
+                
+                <p style="color: #FFFCF8; color: #FFFCF8; font-size: x-large;"> 
+                    Fresh Updates
+                    <br>
+                    Direct to your inbox
+                </p>
+                <div style="display: flex; flex-direction: row;">
+                    <input style="margin-right: 10px; width: 75%;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Recieve News!">
+                    <button class="btn btn-primary" style=" border:0; background-color:#BA2025;" type="submit">Submit</button>
+                </div>
+    
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent;" style="background-color: transparent;">
+                    <div class="container-fluid" style="margin-left: 0;">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+    
+                      <div class="collapse navbar-collapse" style="margin-left: -17px;">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a style="color: #FFFCF8;" class="nav-link active" aria-current="page" href="#">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a style="color: #FFFCF8;" class="nav-link" href="#">Terms and Conditions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a style="color: #FFFCF8;" class="nav-link" href="#">Privacy Policy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+    
+            <div style="display: flex; flex-direction:column; margin-left: 20%; margin-top: 10%; margin-bottom: 10%; padding-top: 10px;" >
+                <p style="color: #FFFCF8; font-size: x-large;">Follow Us!</p>  
+    
+                <div style="display: flex; flex-direction: row;">
+                <a href="https://www.instagram.com/jomscgs/">
+                <img src="images/Instagram Circle.png" width="50px" height="50px" alt="Instagram Link">
+                </a>
+    
+                <a href="https://web.facebook.com/JomsCGS">
+                <img src="images/Facebook.png" width="50px" height="50px" alt="Facebook Link">
+                </a>
+                </div>
+                <p style="font-size: small; font-weight:bold; color:#bdbab6; margin-top: 20px; text-align: right;"> ©2024 Jom's Chili Garlic Sauce. All Rights Reserved. </p>
+    
+            </div>
+        </footer>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            const form = document.querySelector('.orderForm'),
+                  nameInput = document.querySelector('#Name'),
+                  lastNameInput = document.querySelector('#LastName'),
+                  addressInput = document.querySelector('#address');
+                  cityInput = document.querySelector('#City');
+                  province = document.querySelector('#Province');
+            const title = document.querySelector('#card-title');
+            //const totalPriceElement = document.querySelector('.total-price');
+            var orderDetails = readContents('');
+
+                function sendEmail(e) {
+                e.preventDefault();
+                orderDetails = '\n\n \n' + readContents();
+
+                let body = `Hello ${nameInput.value} ${lastNameInput.value},<br>` +
+                `you are receiving this email as confirmation for your order:<br>${orderDetails}<br>` +
+                `to Street Address: ${addressInput.value}, City: ${cityInput.value}, Province: ${province.value}<br>
+                Total: <strong> ₱${total} <strong> <br>
+                <i> Thank you for you Purchase! <i>
+                `;
+
+                Email.send({
+                    SecureToken: "e07292d9-edf2-4ee4-a324-0126deb88118",
+                    Host: "smtp.elasticemail.com",
+                    Username: "jomschiligarlic@gmail.com",
+                    Password: "046BD0A080634C19B14F99005F9BCB3C438C",
+                    To: document.getElementById('Email').value,
+                    From: 'jomschiligarlic@gmail.com',
+                    Subject: "ORDER CONFIRMATION",
+                    Body: body
+                }).then(
+                    message => alert(message)
+                );  
+        
+                return true;
+            }
+
+            function itemsExists() {
+                const parent = document.querySelector('.cart-items'); // Use querySelector to get the first element
+                const child = document.querySelector('.card.border-warning.mb-3'); // Use querySelector to get the first element
+                var alert = document.getElementById('alert');
+                if (parent && child) {
+                    if (parent.contains(child)) {
+                        alert.style.display('none')
+                        return true;
+                    } else {
+                        alert.style.display('block')
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            }
+
+            function readContents() {
+                const cartItems = document.querySelector('.cart-items'); // Assuming there is only one element with the class 'cart-items'
+
+                if (cartItems) {
+                    let result = ''; // Initialize an empty string
+
+                    const cartRows = cartItems.querySelectorAll('.cart-row');
+
+                    console.log('Number of cart rows: ' + cartRows.length);
+
+                    cartRows.forEach((cartRow, index) => {
+                        const title = cartRow.querySelector('.card-title').innerText;
+                        const quantityInput = cartRow.querySelector('.quantity-input');
+
+                        if (quantityInput) {
+                            const quantity = parseFloat(quantityInput.value);
+                            result += `<br><b>${index + 1}. ${title}, Quantity: ${quantity}.</b><br>`; // Concatenate to the result string
+                        } else {
+                            console.log(`Row ${index + 1}: Quantity input not found for ${title}.`);
+                        }
+                    });
+
+                    return result; // Return the final string after the loop
+                } else {
+                    console.log('No element with class "cart-items" found.');
+                    return ''; // Return an empty string if cartItems is not found
+                }
+            }
+        </script>        
+
+    </body>
+
+    <script>
+        var popuplink = document.getElementById("popup-link");
+        var popupWindow = document.getElementById("popup-window");
+        var closeButton = document.getElementById("close-button");
+        
+        popuplink.addEventListener("click", function(event){
+            event.preventDefault();
+            popupWindow.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function(){
+            popupWindow.style.display = "none"
+        });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var popuplink = document.getElementById("popup-link");
+        var popupWindow = document.getElementById("popup-window");
+        var closeButton = document.getElementById("close-button");
+        var orderNowButton = document.getElementById("popup-link"); // Change the ID to match your "Order Now" button
+
+        popuplink.addEventListener("click", function (event) {
+            event.preventDefault();
+            popupWindow.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function () {
+            popupWindow.style.display = "none";
+        });
+
+        // Add an event listener to the "Order Now!" button
+        orderNowButton.addEventListener("click", function () {
+            if (itemsExists()) {
+                console.log("Items exist. Opening the pop-up window.");
+                popupWindow.style.display = "block";
+            } else {
+                popupWindow.style.display = "none";
+                console.log("No items in the cart. Alert the user.");
+                alert("Your cart is empty. Please add items before placing an order.");
+                // You can customize the alert message based on your requirements
+
+                // Prevent the default action of the link (e.g., navigating to a new page)
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+
+
+    <script src="js/cart.js"></script>
+    <script src="js/open.js"></script>
+
+</html>
